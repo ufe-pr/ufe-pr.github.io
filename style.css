@@ -8,7 +8,7 @@ a {
 }
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', 'Montserrat', sans-serif;
     background: linear-gradient(to bottom, #132861, #1e2d55);
     width: 100%;
 }
