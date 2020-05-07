@@ -22,7 +22,7 @@ header nav, .hero, .what-u-learn, .want-to-go-further, .sign-newsletter, footer 
 }
 
 header nav, footer {
-    height: 80px;
+    height: 150px;
     background: transparent;
     display: flex;
     align-items: center;
@@ -35,6 +35,11 @@ header nav, footer {
     font-size: 32px;
     color: #ffffff;
     font-weight: 600;
+    height: calc(100% - 30px);
+}
+
+.brand-logo img {
+    height: 100%;
 }
 
 .hero, .discuss, .interested, .sign-newsletter {    
@@ -84,7 +89,7 @@ header nav, footer {
     max-width: 40%;
     text-align: left;
     height: 30pc;
-    box-shadow: 1px 1px 16px 0 #cccccc80;
+    /* box-shadow: 1px 1px 16px 0 #cccccc80; */
     border-radius: 8px;
     overflow: hidden;
 }
