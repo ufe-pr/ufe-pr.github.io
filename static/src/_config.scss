@@ -1,0 +1,73 @@
+$primary-color: #7441ad !default;
+$primary-color-accent: #9d52e2 !default;
+$background: #ffffff !default;
+$transition-time: 300ms;
+$middle-black: #808080;
+$header-height: 5em;
+$text-color: #1a1a1a;
+$side-padding: var(--side-padding);
+$monospace: "Share Tech Mono", Courier, monospace;
+$sans-serif: "Saira Semi Condensed", sans-serif;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primary-text {
+    color: $primary-color-accent;
+}
+
+.warning {
+    color: #d88a24;
+    background: #d47e1c78;
+    padding: 1px 4px;
+    line-height: 1;
+}
+
+.inline-large {
+    font-size: 175%;
+    line-height: 1;
+    font-weight: 700;
+}
+
+p:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+
+.code-inline, code {
+    font-family: $monospace;
+    background: rgba($color: $primary-color-accent, $alpha: .1);
+    color: $primary-color-accent;
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+
+
+$mq-breakpoints: (
+  mobile: 425px,
+  tablet: 768px,
+  desktop: 1024px,
+  wide: 1440px,
+  // Tweakpoints
+  desktopAd: 810px,
+  mobileLandscape: 480px,
+) !default;
+
+@import 'mq';
+
+
+:root {
+    --side-padding: 2rem;
+
+    @include mq($from: mobile) {
+        --side-padding: 3rem;
+    }
+
+    @include mq($from: tablet) {
+        --side-padding: 5rem;
+    }
+}
